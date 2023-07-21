@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LINODE_API_TOKEN=487e09bf025bd6ba97b488f53aa99a16b6d74d177580323ba990f1b6b9351400
-VOLUME_ID=1163074  # Input your volume ID
+LINODE_API_TOKEN= #your_linode_api_token
+VOLUME_ID=  # Input your volume ID
 DATE_TIME="`date +%Y%m%d`";
 
 linode_cli() {
