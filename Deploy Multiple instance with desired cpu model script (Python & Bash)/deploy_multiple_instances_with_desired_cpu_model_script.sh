@@ -52,7 +52,7 @@ do
     # Compare the CPU version
     if [[ "$cpu_version" == *"$desired_cpu_version"* ]]; then
         echo "Ubuntu server on Linode $instance_id has the desired CPU version: $desired_cpu_version"
-	$counter+=$(counter+1)
+	counter=$((counter+1))
     else
         echo "Ubuntu server on Linode $instance_id does not have the desired CPU version. Current CPU version: $cpu_version"
         
