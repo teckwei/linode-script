@@ -72,7 +72,7 @@ def apply_label_if_label_null(pool_id_matched, label_value):
         print("An error occurred:", str(e))
 
 # Call the function to apply taints to nodes where spec.taints is null
-apply_taint_if_spec_taints_null("199804", "app=dsp:NoExecute")
+apply_taint_if_spec_taints_null("199804", "app=php:NoExecute")
 
 # Call the function to apply labels to nodes where spec.labels.node_group is null
-apply_label_if_label_null("207492","node_group=dsp_other")
+apply_label_if_label_null("207492","node_group=php")
