@@ -5,8 +5,8 @@ import queue
 import boto3
 
 # Configuration
-ACCESS_KEY = 'LKQJHVBVEGWEUICXM0P2'
-SECRET_KEY = 'D8EofYA4BdAMNCwzLg9ByXRj4hSIU9G06bCkeePs'
+ACCESS_KEY = '' #enter your object storage access key
+SECRET_KEY = '' #enter your object storage secret key
 ENDPOINT_URL = 'https://jp-osa-1.linodeobjects.com'
 RPS = 300  # Request per second limit
 NUM_WORKERS = 10  # Number of worker threads to handle uploads
