@@ -7,11 +7,11 @@ LINODE_API_TOKEN=""
 API_ENDPOINT="https://api.linode.com/v4/linode/instances"
 
 # Predefined CPU alert value
-CPU_ALERT_VALUE=80  # Set your desired CPU alert threshold value here
-NETWORK_IN=0
-NETWORK_OUT=0
-TRANSFER_QUOTA=0
-ALERT_IO=0
+CPU_ALERT_VALUE=0  # Set your desired CPU alert threshold value here
+NETWORK_IN=0 # Set your desired network in alert threshold value here
+NETWORK_OUT=0 # Set your desired network out alert threshold value here
+TRANSFER_QUOTA=0 # Set your desired transfer quota alert threshold value here
+ALERT_IO=0 # Set your desired IOPS alert threshold value here
 
 # Function to fetch Linode instances with pagination and filter by alert settings
 fetch_linode_ids() {
