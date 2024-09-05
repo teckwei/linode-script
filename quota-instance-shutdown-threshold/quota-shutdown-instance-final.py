@@ -2,7 +2,7 @@ import requests
 import time
 
 # Your Linode API token
-API_TOKEN = "51b8c2fb910a27c9fe56aee5e0fe405417b5c986a900d0805cd1fab44f26db02"
+API_TOKEN = ""
 
 # API endpoints
 BASE_URL = "https://api.linode.com/v4"
