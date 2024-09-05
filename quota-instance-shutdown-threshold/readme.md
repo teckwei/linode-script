@@ -10,7 +10,7 @@ The objective of this project is to develop a Python script utilizing the Linode
 ## Prerequisites:
 1. Prepare Linode API Token Credentials 
 
-##Step to implement:
+## Step to implement:
 1. Prepared all the dependencies mentioned above.
 2. Modify the API token and other information from the script based on your need.
 3. Setup the cron task scheduler to execute the script (every 1 minutes)
