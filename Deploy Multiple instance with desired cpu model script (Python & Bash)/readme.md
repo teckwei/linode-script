@@ -7,11 +7,11 @@
 3.	Using as alternative before premium plan available for the customer.
 ## Prerequisites 
 ### Bash Script:
-•	sshpass command
-•	jq command
+1. sshpass command
+2. jq command
 ### Python:
-•	sshpass command
-•	Install python3 on your device
+1. sshpass command
+2. Install python3 on your device
 ## Step to reproduce: (bash script)
 1.	Install all the dependencies mentioned above.
 2.	Nano command to save the script on the device that you using (I created a Nanode instance to perform the command) Script will be attached on the document.
