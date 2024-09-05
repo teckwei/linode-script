@@ -36,7 +36,5 @@ When you create a new Linode instance by default, the alert threshold notificati
 
 5. ./filename.sh to execute your script, you may see the attachment detail how the script will be run.
 
-## Remark:
-•	I have shared with one customer based in Greater China (Free Connected) with the scripting that I have done.
 ## Reference:
 https://techdocs.akamai.com/linode-api/reference/put-linode-instance
