@@ -20,3 +20,6 @@
 4.	chmod +x “filename.sh” command to specifically sets the execute permission on a file, allowing it to be run as a program.
 5.	./filename.sh to execute your script, you may see the attachment detail how the script will be ran.
 
+## Reference script code:
+https://github.com/teckwei/linode-script/blob/main/mass_linode_instance_creation_apply_rate_limit/create_instance_tw.sh
+
