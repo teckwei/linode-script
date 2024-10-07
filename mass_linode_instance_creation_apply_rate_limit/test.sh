@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # API TOKEN
-ACCESS_TOKEN="YOUR_API_TOKEN"
+ACCESS_TOKEN="c7daf497cac7964ebbacfe49b3417afdefa5f170568983ef84602f83bfa8febd"
 
 # Set value parameters
 region="ap-south"  # region to deploy
@@ -35,7 +35,7 @@ create_instance() {
     response_body=$(echo "$create_response" | sed '$d')
 
     # Log the raw response for debugging
-    # echo "Raw Response for instance $LABEL_COUNTER: $create_response"
+    echo "Raw Response for instance $LABEL_COUNTER: $create_response"
 
     if [[ "$http_status" == "200" ]]; then
         instance_id=$(echo "$response_body" | jq -r '.id')
