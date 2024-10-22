@@ -1,5 +1,5 @@
 
-# Mass deploy Linode instances while considering the API rate limit for instance creation.
+# Mass Deletion Linode instances while considering the API rate limit for instance creation.
 
 ## Problem Statement
 1. The process of mass deletion Linode instances may be hindered by the API rate limit for instance creation, which allows for only a limited number of instances to be delete within a specific timeframe.
