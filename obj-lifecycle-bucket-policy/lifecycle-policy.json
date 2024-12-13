@@ -1,0 +1,18 @@
+{
+  "Rules": [
+    {
+      "ID": "DeleteAfter1Day",
+      "Filter": {
+        "Tag": {
+          "Key": "membership",
+          "Value": "1day"
+        }
+      },
+      "Status": "Enabled",
+      "Expiration": {
+        "Days": 1
+      }
+    }
+  ]
+}
+
