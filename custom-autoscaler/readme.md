@@ -1,4 +1,4 @@
-# Linode RabbitMQ Autoscaler
+# Linode Custom Autoscaler
 
 This Python script is an autoscaler for RabbitMQ queues running on Linode. It dynamically provisions and deletes Linode GPU virtual machines (VMs) based on the number of messages in the RabbitMQ queue. The script ensures efficient resource utilization by scaling up when there is demand and scaling down when VMs are idle.
 
