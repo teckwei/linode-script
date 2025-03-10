@@ -17,8 +17,8 @@ This Python script is an autoscaler for RabbitMQ queues running on Linode. It dy
 ## Prerequisite
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-repo/linode-rabbitmq-autoscaler.git
-   cd linode-rabbitmq-autoscaler
+   git clone https://github.com/teckwei/linode-script.git
+   cd linode-script/custom-autoscaler
    ```
 
 2. Create a `.env` file and configure the following environment variables:
