@@ -175,17 +175,25 @@ def save_to_excel(stats_list: List[Dict], output_file: str = "vm_statistics.xlsx
                     "CPU Utilization (24h)": f"{stats['cpu']['utilization']['24h']:.2f}%",
                     "CPU Utilization (Last 30 Days)": f"{stats['cpu']['utilization']['month']:.2f}%",
                     "Disk IO (24h)": f"{stats['disk']['io']['24h']:.2f}",
-                    "Disk IO (Month)": f"{stats['disk']['io']['month']:.2f}",
+                    "Disk IO (Last 30 Days)": f"{stats['disk']['io']['month']:.2f}",
                     "Disk Swap (24h)": f"{stats['disk']['swap']['24h']:.2f}",
-                    "Disk Swap (Month)": f"{stats['disk']['swap']['month']:.2f}",
+                    "Disk Swap (Last 30 Days)": f"{stats['disk']['swap']['month']:.2f}",
                     "IPv4 Public In (24h)": f"{stats['network']['ipv4']['public']['in']['24h']:.2f}",
                     "IPv4 Public Out (24h)": f"{stats['network']['ipv4']['public']['out']['24h']:.2f}",
                     "IPv4 Private In (24h)": f"{stats['network']['ipv4']['private']['in']['24h']:.2f}",
                     "IPv4 Private Out (24h)": f"{stats['network']['ipv4']['private']['out']['24h']:.2f}",
+                    "IPv4 Public In (Last 30 Days)": f"{stats['network']['ipv4']['public']['in']['month']:.2f}",
+                    "IPv4 Public Out (Last 30 Days)": f"{stats['network']['ipv4']['public']['out']['month']:.2f}",
+                    "IPv4 Private In (Last 30 Days)": f"{stats['network']['ipv4']['private']['in']['month']:.2f}",
+                    "IPv4 Private Out (Last 30 Days)": f"{stats['network']['ipv4']['private']['out']['month']:.2f}",
                     "IPv6 Public In (24h)": f"{stats['network']['ipv6']['public']['in']['24h']:.2f}",
                     "IPv6 Public Out (24h)": f"{stats['network']['ipv6']['public']['out']['24h']:.2f}",
                     "IPv6 Private In (24h)": f"{stats['network']['ipv6']['private']['in']['24h']:.2f}",
-                    "IPv6 Private Out (24h)": f"{stats['network']['ipv6']['private']['out']['24h']:.2f}"
+                    "IPv6 Private Out (24h)": f"{stats['network']['ipv6']['private']['out']['24h']:.2f}",
+                    "IPv6 Public In (Last 30 Days)": f"{stats['network']['ipv6']['public']['in']['month']:.2f}",
+                    "IPv6 Public Out (Last 30 Days)": f"{stats['network']['ipv6']['public']['out']['month']:.2f}",
+                    "IPv6 Private In (Last 30 Days)": f"{stats['network']['ipv6']['private']['in']['month']:.2f}",
+                    "IPv6 Private Out (Last 30 Days)": f"{stats['network']['ipv6']['private']['out']['month']:.2f}"
                 })
                 """
             
@@ -245,7 +253,7 @@ async def get_vm_stats(vm_id: int, session: aiohttp.ClientSession) -> Optional[D
                 await asyncio.sleep(60)  # Wait a minute before retrying
                 return None
             if response.status != 200:
-                logger.error(f"Failed to fetch monthly stats for VM {vm_id}: {await response.text()}")
+                logger.error(f"Failed to fetch last 30 days stats for VM {vm_id}: {await response.text()}")
                 return None
             stats_month = await response.json()
 
@@ -319,7 +327,7 @@ async def get_vm_stats(vm_id: int, session: aiohttp.ClientSession) -> Optional[D
         # Log the statistics
         logger.info(f"VM {vm_id} Statistics:")
         logger.info(f"CPU Utilization (24h): {stats['cpu']['utilization']['24h']:.2f}%")
-        logger.info(f"CPU Utilization (Month): {stats['cpu']['utilization']['month']:.2f}%")
+        logger.info(f"CPU Utilization (Last 30 Days): {stats['cpu']['utilization']['month']:.2f}%")
         logger.info(f"Disk IO (24h): {stats['disk']['io']['24h']:.2f}")
         logger.info(f"Disk Swap (24h): {stats['disk']['swap']['24h']:.2f}")
 
