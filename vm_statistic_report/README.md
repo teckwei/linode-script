@@ -1,6 +1,6 @@
 # Linode VM Statistics Collector
 
-This script collects and exports performance statistics for Linode virtual machines (VMs), specifically targeting g6-standard and g6-nanode instances. It gathers CPU utilization, disk I/O, and network traffic metrics for both 24-hour and monthly periods.
+This script collects and exports performance statistics for Linode virtual machines (VMs), specifically targeting Nanode and shared linode instances types. It gathers CPU utilization, disk I/O, and network traffic metrics for both 24-hour and last 30 days periods.
 
 ## Features
 
@@ -30,8 +30,8 @@ This script collects and exports performance statistics for Linode virtual machi
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/teckwei/linode-script.git
+   cd linode-script/vm_statistic_report
    ```
 
 2. Create a `.env` file in the project directory:
