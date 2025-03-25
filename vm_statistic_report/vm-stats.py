@@ -166,14 +166,14 @@ def save_to_excel(stats_list: List[Dict], output_file: str = "vm_statistics.xlsx
                     "Instance Name": label,
                     "Linode ID": vm_id,
                     "CPU Utilization (24h)": f"{stats['cpu']['utilization']['24h']:.2f}%",
-                    "CPU Utilization (Month)": f"{stats['cpu']['utilization']['month']:.2f}%",
+                    "CPU Utilization (Last 30 Days)": f"{stats['cpu']['utilization']['month']:.2f}%",
                 })
                 """
                 combined_data.append({
                     "Instance Name": label,
                     "Linode ID": vm_id,
                     "CPU Utilization (24h)": f"{stats['cpu']['utilization']['24h']:.2f}%",
-                    "CPU Utilization (Month)": f"{stats['cpu']['utilization']['month']:.2f}%",
+                    "CPU Utilization (Last 30 Days)": f"{stats['cpu']['utilization']['month']:.2f}%",
                     "Disk IO (24h)": f"{stats['disk']['io']['24h']:.2f}",
                     "Disk IO (Month)": f"{stats['disk']['io']['month']:.2f}",
                     "Disk Swap (24h)": f"{stats['disk']['swap']['24h']:.2f}",
