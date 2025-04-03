@@ -1,4 +1,4 @@
-# Test VLAN IP Without Duplicate (v2)
+# VLAN IP's check and apply mechanism without duplication
 
 ## Overview
 This Python script checks for duplicate IP addresses in a VLAN environment and ensures that each IP is unique across the network. It is designed for use cases where maintaining unique IP addresses in a VLAN is critical for network stability and communication.
